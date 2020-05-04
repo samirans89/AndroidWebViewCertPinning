@@ -15,5 +15,6 @@ Demo App for Self Signed SSL certificate validation for WebViews by Bundling and
 2. Click the Go button.
 
 # Observations
-The https endpoints give a valid response only when presented with a valid certificate.
+1. The WebView does not show the server pages when presented with a invalid certificate.
+2. The WebView shows the server pages when presented with a valid certificate. In case, the valid certificate is used once for the domain, it gets cached and even when presented with an invalid certificate thereafter, the webview shows the accurate server pages. In this case, for Emulator or BrowserStack session, just start a new session.
 
